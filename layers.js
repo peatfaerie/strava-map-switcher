@@ -42,7 +42,7 @@ var AdditionalMapLayers;
 			url: "https://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png",
 			opts: {maxZoom: 20, attribution: thunderforestAttr}},
 		mapycz: {name: "mapy.cz (Outdoor)",
-			url: "https://mapserver.mapy.cz/turist-m/{z}-{x}-{y}",
+			url: "https://mapserver.mapy.cz/turist-m/retina/{z}-{x}-{y}",
 			opts: {minZoom: 2, maxZoom: 20, maxNativeZoom: 18, attribution: mapyCzAttr}},
 		mapyczwinter: {name: "mapy.cz (Winter)",
 			url: "https://mapserver.mapy.cz/winter-m/{z}-{x}-{y}",

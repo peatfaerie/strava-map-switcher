@@ -248,6 +248,7 @@ document.arrive(".mapboxgl-map", {onceOnly: false, existing: true, fireOnAttribu
 			if (t) {
 				clearCompositeLayers(map);
 				layerFromLeaflet(map, t,
+							map.getLayer("squadrats-squadrats") ? "squadrats-squadrats" :
 					map.getLayer("global-heatmap") ? "global-heatmap" :
 					map.getLayer("personal-heatmap") ? "personal-heatmap" :
 					"z-index-1");

@@ -26,13 +26,6 @@
 		document.body.appendChild(s);
 	});
 
-	const getCSS = function (url) {
-		const s = document.createElement('link');
-		s.href = url;
-		s.rel = 'stylesheet';
-		document.head.appendChild(s);
-	};
-
 	const loadJQuery = () => window.jQuery
 		? Promise.resolve(null)
 		: getScript(getURL('3rd/jquery-3.5.1.min.js')).then(() => jQuery.noConflict());
@@ -50,8 +43,6 @@
 		getScript(getURL('donation.js')),
 		ignoreError(loadGoogleMaps().then(() => Promise.all([
 			loadGoogleMutant(),
-			getScript(getURL('3rd/leaflet-pegman.min.js')),
-			getCSS(getURL('3rd/leaflet-pegman.min.css')),
 		]))),
 	])).then(function () {
 		getScript(getURL('fix.js'));

@@ -22,6 +22,7 @@ var AdditionalMapLayers;
 	const kartverketAttr = '&copy; <a href="https://www.kartverket.no/">Kartverket</a>';
 	const geoportailAttr = '&copy; <a href="https://www.geoportail.gouv.fr/">Geoportail</a>';
 	const mtbMapNOAttr = osmAttr + ', Tiles courtesy of <a href="https://mtbmap.no/" target="_blank">mtbmap.no</a>';
+	const ormAttr = 'Layer &copy; <a href="https://openrailwaymap.org/" target="_blank">openrailwaymap.org</a>';
 
 	AdditionalMapLayers = {
 		openstreetmap: {name: "OpenStreetMap",
@@ -36,7 +37,7 @@ var AdditionalMapLayers;
 			url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
 			opts: {maxZoom: 20, maxNativeZoom: 19, attribution: osmAttr},
 			overlay: {url: "https://{s}.tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png",
-				opts: {maxZoom: 20, maxNativeZoom: 19, attribution: osmAttr}}},
+				opts: {maxZoom: 20, maxNativeZoom: 19, attribution: ormAttr}}},
 		opencyclemap: {name: "OpenCycleMap",
 			url: "https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png",
 			opts: {maxZoom: 20, attribution: thunderforestAttr}},

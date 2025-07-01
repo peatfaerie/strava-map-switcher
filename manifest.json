@@ -38,8 +38,6 @@
       "resources": [
         "3rd/Leaflet.GoogleMutant.js",
         "3rd/jquery-3.5.1.min.js",
-        "3rd/leaflet-pegman.min.css",
-        "3rd/leaflet-pegman.min.js",
         "arrive.min.js",
         "common.js",
         "donation.js",
